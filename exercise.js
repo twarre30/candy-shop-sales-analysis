@@ -12,10 +12,12 @@ function addTotalSalesToItems(sales, items){
 }
 
 function addTotalValueToItems(sales, items){
-    return addTotalSalesToItems(sales, items).map(item => {
-        item.totalValue = (item.quantity * 10 * item.price * 10) / 100;
-        return item;
-    });
+  return addTotalSalesToItems(sales, items).map(item => {
+    return {
+      ...item,
+      totalValue: (item.quantity * 10 * item.price * 10) / 100,
+    }
+  })
 }
 
 module.exports = {
