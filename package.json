@@ -9,6 +9,6 @@
   "author": "Kyle Coberly",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "mocha": "^9.2.2"
   }
 }
